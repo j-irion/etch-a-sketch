@@ -1,4 +1,5 @@
 let grid = document.getElementById("grid");
+let txtOutput = document.getElementById("txt-output");
 
 function createGrid(size) {
   for (let i = 0; i < size * size; ++i) {
@@ -9,6 +10,7 @@ function createGrid(size) {
     grid.appendChild(field);
   }
   createHoverFunctionality();
+  txtOutput.textContent = "Grid created!";
 }
 
 function createHoverFunctionality() {
