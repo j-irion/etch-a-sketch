@@ -1,5 +1,6 @@
+let grid = document.getElementById("grid");
+
 function createGrid(size) {
-  let grid = document.getElementById("grid");
   for (let i = 0; i < size * size; ++i) {
     let field = document.createElement("div");
     field.classList.add("field");
@@ -26,3 +27,13 @@ function giveRandomColor() {
 
   return `rgb(${red},${green},${blue})`;
 }
+
+let sizeButton = document.getElementById("btn-size");
+sizeButton.addEventListener("click", () => {
+  let size = prompt("How many squares per side should your grid have?");
+  while (grid.firstChild) {
+    grid.removeChild(grid.lastChild);
+  }
+  if (size <= 64 && size > 0) createGrid(Math.floor(size));
+  else createGrid(64);
+});
