@@ -1,8 +1,12 @@
 div {
-    border: solid black 1px;
+    border: 0px;
 }
 
 #grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
     height: 640px;
     width: 640px;
+    border: solid 1px black;
 }
