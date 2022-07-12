@@ -1,0 +1,8 @@
+div {
+    border: solid black 1px;
+}
+
+#grid {
+    height: 640px;
+    width: 640px;
+}
