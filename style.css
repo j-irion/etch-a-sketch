@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 div {
@@ -21,28 +21,31 @@ div {
 #btn-section {
     display: flex;
     justify-content: space-between;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 15px;
     background-color: #0077CC;
     margin-top: 20px;
     align-items: center;
-    width: 500px;
+    width: 580px;
 }
 
 #txt-output {
-    font-size: 22px;
+    font-size: 28px;
     color: white;
+    font-weight: bolder;
 }
 
 h1 {
     margin: 20px;
+    font-weight: 900;
+    font-size: 40px;
 }
 
 #btn-size {
     border: 2px solid white;
-    border-radius: 8px;
+    border-radius: 15px;
     background-color: #0077CC;
     color: white;
-    padding: 5px;
+    padding: 10px;
     font-size: 18px;
 }
